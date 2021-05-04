@@ -5,7 +5,7 @@
     @change="onChange()"
     >
         <option value="0">Select Country</option>
-        <option v-for="country in countries" :key="country.ID" >
+        <option v-for="country in countries" :key="country.ID" :value="country.ID" >
             {{ country.Country }}
         </option>
     </select>
